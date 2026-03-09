@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bina Auto-Post — Instagram on Autopilot | Bina Digital</title>
-    <meta name="description" content="Professional Instagram management for Bali businesses. 12 posts/month, zero effort. From IDR 3.2M/month.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Professional Instagram management for Bali businesses. 12 posts/month, zero effort. From IDR 3.2M/month.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-dark: #0a0a1a;
@@ -24,7 +27,11 @@
             --glass-border: rgba(255, 255, 255, 0.1);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
@@ -54,14 +61,24 @@
             width: 200%;
             height: 200%;
             background: radial-gradient(ellipse at 30% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-                        radial-gradient(ellipse at 70% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+                radial-gradient(ellipse at 70% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
             animation: float 15s ease-in-out infinite;
         }
 
         @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(30px, -30px) rotate(1deg); }
-            66% { transform: translate(-20px, 20px) rotate(-1deg); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -30px) rotate(1deg);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) rotate(-1deg);
+            }
         }
 
         .hero-content {
@@ -84,8 +101,21 @@
             backdrop-filter: blur(10px);
         }
 
-        .hero-badge span { animation: pulse 2s ease-in-out infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .hero-badge span {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
 
         .hero h1 {
             font-size: clamp(2.5rem, 6vw, 4.5rem);
@@ -278,8 +308,16 @@
             flex-shrink: 0;
         }
 
-        .feature-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
-        .feature-card p { color: var(--text-secondary); font-size: 0.9rem; }
+        .feature-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
 
         /* === PRICING === */
         .pricing-grid {
@@ -334,7 +372,10 @@
             margin-bottom: 0.5rem;
         }
 
-        .price-card h3 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+        .price-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
 
         .price-amount {
             font-size: 2.5rem;
@@ -342,8 +383,17 @@
             margin-bottom: 0.25rem;
         }
 
-        .price-amount .currency { font-size: 1.2rem; font-weight: 600; vertical-align: super; }
-        .price-period { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem; }
+        .price-amount .currency {
+            font-size: 1.2rem;
+            font-weight: 600;
+            vertical-align: super;
+        }
+
+        .price-period {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
 
         .price-features {
             list-style: none;
@@ -375,7 +425,8 @@
             overflow: hidden;
         }
 
-        .comparison-table th, .comparison-table td {
+        .comparison-table th,
+        .comparison-table td {
             padding: 16px 20px;
             text-align: left;
             border-bottom: 1px solid var(--glass-border);
@@ -388,17 +439,26 @@
             color: var(--text-secondary);
         }
 
-        .comparison-table td { font-size: 0.95rem; }
+        .comparison-table td {
+            font-size: 0.95rem;
+        }
 
-        .comparison-table tr:last-child td { border-bottom: none; }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
 
         .comparison-table .highlight {
             background: rgba(139, 92, 246, 0.08);
             font-weight: 600;
         }
 
-        .comparison-table .check { color: var(--accent-green); }
-        .comparison-table .cross { color: var(--accent-pink); }
+        .comparison-table .check {
+            color: var(--accent-green);
+        }
+
+        .comparison-table .cross {
+            color: var(--accent-pink);
+        }
 
         /* === CTA SECTION === */
         .cta-section {
@@ -428,8 +488,16 @@
             background: var(--gradient-main);
         }
 
-        .cta-box h2 { font-size: 2rem; margin-bottom: 1rem; }
-        .cta-box p { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem; }
+        .cta-box h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
 
         .whatsapp-btn {
             background: #25d366;
@@ -452,233 +520,270 @@
             border-top: 1px solid var(--glass-border);
         }
 
-        footer a { color: var(--accent-purple); text-decoration: none; }
+        footer a {
+            color: var(--accent-purple);
+            text-decoration: none;
+        }
 
         /* === RESPONSIVE === */
         @media (max-width: 768px) {
-            .hero { min-height: 90vh; }
-            .cta-group { flex-direction: column; align-items: center; }
-            .comparison-table { font-size: 0.85rem; }
-            .comparison-table th, .comparison-table td { padding: 10px 12px; }
-            .cta-box { padding: 2.5rem 1.5rem; }
-            .pricing-grid { grid-template-columns: 1fr; }
+            .hero {
+                min-height: 90vh;
+            }
+
+            .cta-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px 12px;
+            }
+
+            .cta-box {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<!-- HERO -->
-<section class="hero" id="top">
-    <div class="hero-content">
-        <div class="hero-badge">
-            <span>🟢</span> Now accepting Bali businesses
-        </div>
-        <h1>Your Instagram.<br><span class="gradient-text">On Autopilot.</span></h1>
-        <p>You send photos. We create stunning content, write captions, and post it — all while you run your business.</p>
-        <div class="cta-group">
-            <a href="https://wa.me/6281339080552?text=Hi!%20I'm%20interested%20in%20Bina%20Auto-Post" class="btn btn-primary" id="cta-hero-whatsapp">💬 Get Free Instagram Audit</a>
-            <a href="#pricing" class="btn btn-outline" id="cta-hero-pricing">View Pricing ↓</a>
-        </div>
-    </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section id="how">
-    <span class="section-label">How it works</span>
-    <h2 class="section-title">Three steps. Zero headaches.</h2>
-    <p class="section-desc">No apps to learn. No dashboards to manage. No passwords to share.</p>
-
-    <div class="steps-grid">
-        <div class="step-card" id="step-1">
-            <div class="step-icon">📸</div>
-            <h3>Send us your photos</h3>
-            <p>WhatsApp, Google Drive, email — however you prefer. Send us your product photos, behind-the-scenes shots, or even just ideas.</p>
-        </div>
-        <div class="step-card" id="step-2">
-            <div class="step-icon">✨</div>
-            <h3>We create the magic</h3>
-            <p>Professional design, compelling captions, strategic hashtags, and optimal posting times — all crafted by our AI-powered team.</p>
-        </div>
-        <div class="step-card" id="step-3">
-            <div class="step-icon">🚀</div>
-            <h3>Posts go live automatically</h3>
-            <p>Content is published directly to your Instagram at peak engagement hours. You just watch your followers grow.</p>
-        </div>
-    </div>
-</section>
-
-<!-- FEATURES -->
-<section id="features">
-    <span class="section-label">What's included</span>
-    <h2 class="section-title">Everything your Instagram needs</h2>
-    <p class="section-desc">A complete social media solution, not just a scheduling tool.</p>
-
-    <div class="features-grid">
-        <div class="feature-card" id="feature-posts">
-            <div class="feature-icon">📷</div>
-            <div>
-                <h4>Photo Posts & Carousels</h4>
-                <p>Professional edits, branded layouts, and multi-image carousels that stop the scroll.</p>
+    <!-- HERO -->
+    <section class="hero" id="top">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>🟢</span> Now accepting Bali businesses
+            </div>
+            <h1>Your Instagram.<br><span class="gradient-text">On Autopilot.</span></h1>
+            <p>You send photos. We create stunning content, write captions, and post it — all while you run your
+                business.</p>
+            <div class="cta-group">
+                <a href="https://wa.me/628133836149?text=Hi!%20I'm%20interested%20in%20Bina%20Auto-Post"
+                    class="btn btn-primary" id="cta-hero-whatsapp">💬 Get Free Instagram Audit</a>
+                <a href="#pricing" class="btn btn-outline" id="cta-hero-pricing">View Pricing ↓</a>
             </div>
         </div>
-        <div class="feature-card" id="feature-reels">
-            <div class="feature-icon">🎬</div>
-            <div>
-                <h4>Reels & Video Content</h4>
-                <p>Short-form videos optimized for the algorithm. Send raw footage — we handle editing.</p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+        <span class="section-label">How it works</span>
+        <h2 class="section-title">Three steps. Zero headaches.</h2>
+        <p class="section-desc">No apps to learn. No dashboards to manage. No passwords to share.</p>
+
+        <div class="steps-grid">
+            <div class="step-card" id="step-1">
+                <div class="step-icon">📸</div>
+                <h3>Send us your photos</h3>
+                <p>WhatsApp, Google Drive, email — however you prefer. Send us your product photos, behind-the-scenes
+                    shots, or even just ideas.</p>
+            </div>
+            <div class="step-card" id="step-2">
+                <div class="step-icon">✨</div>
+                <h3>We create the magic</h3>
+                <p>Professional design, compelling captions, strategic hashtags, and optimal posting times — all crafted
+                    by our AI-powered team.</p>
+            </div>
+            <div class="step-card" id="step-3">
+                <div class="step-icon">🚀</div>
+                <h3>Posts go live automatically</h3>
+                <p>Content is published directly to your Instagram at peak engagement hours. You just watch your
+                    followers grow.</p>
             </div>
         </div>
-        <div class="feature-card" id="feature-captions">
-            <div class="feature-icon">✍️</div>
-            <div>
-                <h4>Captions & Hashtags</h4>
-                <p>Engaging copy in English or Bahasa. Strategic hashtag sets tailored to your niche.</p>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+        <span class="section-label">What's included</span>
+        <h2 class="section-title">Everything your Instagram needs</h2>
+        <p class="section-desc">A complete social media solution, not just a scheduling tool.</p>
+
+        <div class="features-grid">
+            <div class="feature-card" id="feature-posts">
+                <div class="feature-icon">📷</div>
+                <div>
+                    <h4>Photo Posts & Carousels</h4>
+                    <p>Professional edits, branded layouts, and multi-image carousels that stop the scroll.</p>
+                </div>
+            </div>
+            <div class="feature-card" id="feature-reels">
+                <div class="feature-icon">🎬</div>
+                <div>
+                    <h4>Reels & Video Content</h4>
+                    <p>Short-form videos optimized for the algorithm. Send raw footage — we handle editing.</p>
+                </div>
+            </div>
+            <div class="feature-card" id="feature-captions">
+                <div class="feature-icon">✍️</div>
+                <div>
+                    <h4>Captions & Hashtags</h4>
+                    <p>Engaging copy in English or Bahasa. Strategic hashtag sets tailored to your niche.</p>
+                </div>
+            </div>
+            <div class="feature-card" id="feature-schedule">
+                <div class="feature-icon">📅</div>
+                <div>
+                    <h4>Smart Scheduling</h4>
+                    <p>Posted at peak engagement times for Bali audiences. Consistent, never missed.</p>
+                </div>
+            </div>
+            <div class="feature-card" id="feature-brand">
+                <div class="feature-icon">🎨</div>
+                <div>
+                    <h4>Brand Consistency</h4>
+                    <p>Your colors, your voice, your style. We create a brand guide and stick to it.</p>
+                </div>
+            </div>
+            <div class="feature-card" id="feature-analytics">
+                <div class="feature-icon">📊</div>
+                <div>
+                    <h4>Monthly Report</h4>
+                    <p>Growth metrics, top-performing posts, and insights. Know what's working.</p>
+                </div>
             </div>
         </div>
-        <div class="feature-card" id="feature-schedule">
-            <div class="feature-icon">📅</div>
-            <div>
-                <h4>Smart Scheduling</h4>
-                <p>Posted at peak engagement times for Bali audiences. Consistent, never missed.</p>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <div style="text-align: center;">
+            <span class="section-label">Pricing</span>
+            <h2 class="section-title">Invest less than an SMM hire</h2>
+            <p class="section-desc" style="margin: 0 auto 3rem;">A full-time social media manager costs
+                $500–2,000/month.<br>We deliver the same results for a fraction of the cost.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card" id="price-setup">
+                <div class="price-label">One-time</div>
+                <h3>Setup & Onboarding</h3>
+                <div class="price-amount"><span class="currency">IDR</span> 5.5M</div>
+                <div class="price-period">one-time payment</div>
+                <ul class="price-features">
+                    <li>Instagram account audit</li>
+                    <li>Profile optimization (bio, highlights)</li>
+                    <li>Brand guide creation</li>
+                    <li>Content strategy & calendar</li>
+                    <li>First 4 posts — designed & published</li>
+                    <li>Account connection (2-minute process)</li>
+                </ul>
+                <a href="https://wa.me/628133836149?text=Hi!%20I'd%20like%20to%20set%20up%20Auto-Post"
+                    class="btn btn-outline" id="cta-setup" style="width: 100%; justify-content: center;">Get Started</a>
+            </div>
+
+            <div class="price-card featured" id="price-monthly">
+                <div class="price-label">Monthly</div>
+                <h3>Auto-Post Plan</h3>
+                <div class="price-amount"><span class="currency">IDR</span> 3.2M</div>
+                <div class="price-period">per month</div>
+                <ul class="price-features">
+                    <li>12 professional posts/month</li>
+                    <li>Reels & carousel support</li>
+                    <li>Captions in EN or ID</li>
+                    <li>Strategic hashtags</li>
+                    <li>Peak-time scheduling</li>
+                    <li>Monthly performance report</li>
+                    <li>WhatsApp support</li>
+                </ul>
+                <a href="https://wa.me/628133836149?text=Hi!%20I%20want%20the%20Auto-Post%20monthly%20plan"
+                    class="btn btn-primary" id="cta-monthly" style="width: 100%; justify-content: center;">Start
+                    Auto-Posting →</a>
             </div>
         </div>
-        <div class="feature-card" id="feature-brand">
-            <div class="feature-icon">🎨</div>
-            <div>
-                <h4>Brand Consistency</h4>
-                <p>Your colors, your voice, your style. We create a brand guide and stick to it.</p>
-            </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section id="comparison">
+        <span class="section-label">Why us</span>
+        <h2 class="section-title">Compare your options</h2>
+        <p class="section-desc">See why Bali businesses choose Bina Auto-Post over alternatives.</p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Hire SMM Manager</th>
+                    <th>DIY Tools (Buffer, Later)</th>
+                    <th class="highlight">Bina Auto-Post ⚡</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monthly Cost</td>
+                    <td>$500–2,000</td>
+                    <td>$15–80 + your time</td>
+                    <td class="highlight">~$200</td>
+                </tr>
+                <tr>
+                    <td>Content Creation</td>
+                    <td class="check">✓ Included</td>
+                    <td class="cross">✗ You do it</td>
+                    <td class="highlight check">✓ Included</td>
+                </tr>
+                <tr>
+                    <td>Caption Writing</td>
+                    <td class="check">✓ Included</td>
+                    <td class="cross">✗ You do it</td>
+                    <td class="highlight check">✓ AI-powered</td>
+                </tr>
+                <tr>
+                    <td>Your Time Required</td>
+                    <td>~2 hrs/week (briefing)</td>
+                    <td>~5-10 hrs/week</td>
+                    <td class="highlight">~15 min/week</td>
+                </tr>
+                <tr>
+                    <td>Reliability</td>
+                    <td>Sick days, late, quits</td>
+                    <td>You forget to post</td>
+                    <td class="highlight">100% automated</td>
+                </tr>
+                <tr>
+                    <td>Reels Support</td>
+                    <td class="check">✓ Varies</td>
+                    <td class="check">✓ Limited</td>
+                    <td class="highlight check">✓ Full support</td>
+                </tr>
+                <tr>
+                    <td>Analytics</td>
+                    <td>Sometimes</td>
+                    <td class="check">✓ Basic</td>
+                    <td class="highlight check">✓ Monthly report</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-box" id="cta-final">
+            <h2>Ready to put your Instagram<br>on autopilot? 🚀</h2>
+            <p>Get a free audit of your current Instagram. <br>We'll show you exactly what we'd improve — no commitment.
+            </p>
+            <a href="https://wa.me/628133836149?text=Hi!%20I'd%20like%20a%20free%20Instagram%20audit%20for%20my%20business"
+                class="btn whatsapp-btn" id="cta-final-whatsapp">💬 Message Us on WhatsApp</a>
         </div>
-        <div class="feature-card" id="feature-analytics">
-            <div class="feature-icon">📊</div>
-            <div>
-                <h4>Monthly Report</h4>
-                <p>Growth metrics, top-performing posts, and insights. Know what's working.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- PRICING -->
-<section id="pricing">
-    <div style="text-align: center;">
-        <span class="section-label">Pricing</span>
-        <h2 class="section-title">Invest less than an SMM hire</h2>
-        <p class="section-desc" style="margin: 0 auto 3rem;">A full-time social media manager costs $500–2,000/month.<br>We deliver the same results for a fraction of the cost.</p>
-    </div>
-
-    <div class="pricing-grid">
-        <div class="price-card" id="price-setup">
-            <div class="price-label">One-time</div>
-            <h3>Setup & Onboarding</h3>
-            <div class="price-amount"><span class="currency">IDR</span> 5.5M</div>
-            <div class="price-period">one-time payment</div>
-            <ul class="price-features">
-                <li>Instagram account audit</li>
-                <li>Profile optimization (bio, highlights)</li>
-                <li>Brand guide creation</li>
-                <li>Content strategy & calendar</li>
-                <li>First 4 posts — designed & published</li>
-                <li>Account connection (2-minute process)</li>
-            </ul>
-            <a href="https://wa.me/6281339080552?text=Hi!%20I'd%20like%20to%20set%20up%20Auto-Post" class="btn btn-outline" id="cta-setup" style="width: 100%; justify-content: center;">Get Started</a>
-        </div>
-
-        <div class="price-card featured" id="price-monthly">
-            <div class="price-label">Monthly</div>
-            <h3>Auto-Post Plan</h3>
-            <div class="price-amount"><span class="currency">IDR</span> 3.2M</div>
-            <div class="price-period">per month</div>
-            <ul class="price-features">
-                <li>12 professional posts/month</li>
-                <li>Reels & carousel support</li>
-                <li>Captions in EN or ID</li>
-                <li>Strategic hashtags</li>
-                <li>Peak-time scheduling</li>
-                <li>Monthly performance report</li>
-                <li>WhatsApp support</li>
-            </ul>
-            <a href="https://wa.me/6281339080552?text=Hi!%20I%20want%20the%20Auto-Post%20monthly%20plan" class="btn btn-primary" id="cta-monthly" style="width: 100%; justify-content: center;">Start Auto-Posting →</a>
-        </div>
-    </div>
-</section>
-
-<!-- COMPARISON -->
-<section id="comparison">
-    <span class="section-label">Why us</span>
-    <h2 class="section-title">Compare your options</h2>
-    <p class="section-desc">See why Bali businesses choose Bina Auto-Post over alternatives.</p>
-
-    <table class="comparison-table">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Hire SMM Manager</th>
-                <th>DIY Tools (Buffer, Later)</th>
-                <th class="highlight">Bina Auto-Post ⚡</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monthly Cost</td>
-                <td>$500–2,000</td>
-                <td>$15–80 + your time</td>
-                <td class="highlight">~$200</td>
-            </tr>
-            <tr>
-                <td>Content Creation</td>
-                <td class="check">✓ Included</td>
-                <td class="cross">✗ You do it</td>
-                <td class="highlight check">✓ Included</td>
-            </tr>
-            <tr>
-                <td>Caption Writing</td>
-                <td class="check">✓ Included</td>
-                <td class="cross">✗ You do it</td>
-                <td class="highlight check">✓ AI-powered</td>
-            </tr>
-            <tr>
-                <td>Your Time Required</td>
-                <td>~2 hrs/week (briefing)</td>
-                <td>~5-10 hrs/week</td>
-                <td class="highlight">~15 min/week</td>
-            </tr>
-            <tr>
-                <td>Reliability</td>
-                <td>Sick days, late, quits</td>
-                <td>You forget to post</td>
-                <td class="highlight">100% automated</td>
-            </tr>
-            <tr>
-                <td>Reels Support</td>
-                <td class="check">✓ Varies</td>
-                <td class="check">✓ Limited</td>
-                <td class="highlight check">✓ Full support</td>
-            </tr>
-            <tr>
-                <td>Analytics</td>
-                <td>Sometimes</td>
-                <td class="check">✓ Basic</td>
-                <td class="highlight check">✓ Monthly report</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<!-- CTA -->
-<section class="cta-section">
-    <div class="cta-box" id="cta-final">
-        <h2>Ready to put your Instagram<br>on autopilot? 🚀</h2>
-        <p>Get a free audit of your current Instagram. <br>We'll show you exactly what we'd improve — no commitment.</p>
-        <a href="https://wa.me/6281339080552?text=Hi!%20I'd%20like%20a%20free%20Instagram%20audit%20for%20my%20business" class="btn whatsapp-btn" id="cta-final-whatsapp">💬 Message Us on WhatsApp</a>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 <a href="https://niktt7-cmd.github.io/bina-digital/">Bina Digital</a> — Smart Automation for Bali Business</p>
-    <p style="margin-top: 8px;">Bali, Indonesia · <a href="https://www.instagram.com/bina.digital.bali/">@bina.digital.bali</a></p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <a href="https://niktt7-cmd.github.io/bina-digital/">Bina Digital</a> — Smart Automation for Bali
+            Business</p>
+        <p style="margin-top: 8px;">Bali, Indonesia · <a
+                href="https://www.instagram.com/bina.digital.bali/">@bina.digital.bali</a></p>
+    </footer>
 
 </body>
+
 </html>
